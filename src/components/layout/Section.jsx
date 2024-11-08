@@ -1,12 +1,14 @@
 function Section(props) {
     console.log(props);
 
+    const { title, desc, children } = props;
+
     return (
         <section>
             <div className="inner">
-                <h2>{props.title}</h2>
-                <p>섹션 내용</p>
-                <div>섹션내용</div>
+                <h2>{title}</h2>
+                <p>{desc}</p>
+                <div>{children}</div>
             </div>
         </section>
     );

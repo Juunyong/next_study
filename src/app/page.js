@@ -7,9 +7,15 @@ import Section from '@/components/layout/Section';
 export default function Home() {
     return (
         <>
-            <Section title="섹션1" />
-            <Section title="섹션2" />
-            <Section title="섹션3" />
+            <Section title="섹션1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </Section>
+            <Section />
+            <Section />
         </>
     );
 }
