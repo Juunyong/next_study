@@ -1,21 +1,24 @@
+import Comment from '@/components/comment/Comment';
+import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import Nav from '@/components/layout/Nav';
-import Head from 'next/head';
-import Image from 'next/image';
 import Section from '@/components/layout/Section';
 
 export default function Home() {
     return (
         <>
-            <Section title="섹션1">
+            <Section title="섹션1" desc="설명1">
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>news1</li>
+                    <li>news2</li>
+                    <li>news3</li>
                 </ul>
             </Section>
-            <Section />
-            <Section />
+            <Section title="코멘트" desc="나의 글에 코멘트 달린 목록">
+                <Comment />
+            </Section>
+            <Section title="섹션3" desc="설명3">
+                ddd
+            </Section>
         </>
     );
 }
